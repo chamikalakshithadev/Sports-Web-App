@@ -1,10 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { BiCalendar, BiUser } from "react-icons/bi";
 import { FaPlay } from "react-icons/fa";
+import Model from "../Helper/Model";
 
 const Hero = () => {
+  const [showModel, setShowModel] = useState(false);
+  const showModelHandler = () => setShowModel(true);
+  const closeModelHandler = () => setShowModel(false);
+
   return (
     <div className="relative h-[88vh] bg-[url('/images/banner1.jpg')] bg-cover bg-center ">
+      {/* model */}
+      {showModel && <Model hideModel={closeModelHandler} />}
+
       {/* dark overlay */}
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.68)]"></div>
       <div className="relative z-[10] flex items-center h-[100%] text-white">
@@ -43,7 +53,10 @@ const Hero = () => {
           </div>
           {/* play button */}
           <div className="">
-            <div className="w-[10rem] lg:ml-auto h-[10rem] rounded-full bg-red-600 hover:bg-black transition-all duration-200 cursor-pointer sm:flex flex-col items-center justify-center hidden">
+            <div
+              onClick={showModelHandler}
+              className="w-[10rem] lg:ml-auto h-[10rem] rounded-full bg-red-600 hover:bg-black transition-all duration-200 cursor-pointer sm:flex flex-col items-center justify-center hidden"
+            >
               <FaPlay className="w-[3rem] h-[3rem] text-white" />
             </div>
           </div>
