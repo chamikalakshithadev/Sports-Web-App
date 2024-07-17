@@ -5,7 +5,7 @@ import Hero from "./components/Hero/Hero";
 const page = () => {
   return (
     <div className="bg-[#111111] overflow-hidden">
-      <Hero />
+      <Home />
     </div>
   );
 };
