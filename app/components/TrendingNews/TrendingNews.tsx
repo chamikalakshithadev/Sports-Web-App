@@ -10,7 +10,11 @@ const TrendingNews = () => {
       {/* card div */}
       <div className="pt-[2rem] md:pt-[3rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
         {/* card 1 */}
-        <div className="">
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
+          className=""
+        >
           {/* NewsCard */}
           <NewsCard
             image="/images/n1.jpg"
@@ -19,7 +23,12 @@ const TrendingNews = () => {
             height="h-[300px]"
           />
         </div>
-        <div className="">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-anchor-placement="top-center"
+          className=""
+        >
           {/* NewsCard */}
           <NewsCard
             image="/images/n2.jpg"
@@ -28,7 +37,12 @@ const TrendingNews = () => {
             height="h-[300px]"
           />
         </div>
-        <div className="">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-anchor-placement="top-center"
+          className=""
+        >
           {/* NewsCard */}
           <NewsCard
             image="/images/n3.jpg"
@@ -37,7 +51,12 @@ const TrendingNews = () => {
             height="h-[300px]"
           />
         </div>
-        <div className="">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-anchor-placement="top-center"
+          className=""
+        >
           {/* NewsCard */}
           <NewsCard
             image="/images/n4.jpg"
