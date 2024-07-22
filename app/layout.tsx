@@ -3,6 +3,7 @@ import { Oswald } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "./components/NavBar/ResponsiveNav";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/Helper/ScrollToTop";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -25,7 +26,7 @@ export default function RootLayout({
         <ResponsiveNav />
         {children}
         <Footer />
-        
+        <ScrollToTop />
       </body>
     </html>
   );
