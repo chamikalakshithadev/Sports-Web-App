@@ -10,7 +10,11 @@ const LatestPost = () => {
         {/* postCards */}
 
         {/* postcard 1*/}
-        <div className="">
+        <div
+          className=""
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+        >
           <PostCard
             title="THE WORLD CUP WHAT TO EXPECT FROM ENGLAND FOOTBALL CLUB BETWEEN CLUB BETWEEN POLICY SOLUTION"
             image="/images/n1.jpg"
@@ -18,7 +22,12 @@ const LatestPost = () => {
           />
         </div>
         {/* Postcard 2 */}
-        <div className="">
+        <div
+          className=""
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+        >
           <PostCard
             title="THE WORLD CUP WHAT TO EXPECT FROM ENGLAND FOOTBALL CLUB BETWEEN CLUB BETWEEN POLICY SOLUTION"
             image="/images/n2.jpg"
@@ -26,7 +35,12 @@ const LatestPost = () => {
           />
         </div>
         {/* postcard 3*/}
-        <div className="">
+        <div
+          className=""
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="400"
+        >
           <PostCard
             title="THE WORLD CUP WHAT TO EXPECT FROM ENGLAND FOOTBALL CLUB BETWEEN CLUB BETWEEN POLICY SOLUTION"
             image="/images/n3.jpg"
@@ -34,7 +48,12 @@ const LatestPost = () => {
           />
         </div>
         {/* postcard 4*/}
-        <div className="">
+        <div
+          className=""
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="600"
+        >
           <PostCard
             title="THE WORLD CUP WHAT TO EXPECT FROM ENGLAND FOOTBALL CLUB BETWEEN CLUB BETWEEN POLICY SOLUTION"
             image="/images/n4.jpg"
